@@ -9,12 +9,13 @@ public class KoscheiTheDeathless {
 
     private Ocean1 ocean;
 
-    public String getRulesByDeth() {
-        return "На свете есть океан , " + ocean.toString();
+
+    public String getRulesByDeath() {
+        return "\u001B[35m На свете есть океан, " + ocean.toString();
     }
 
     @Autowired
-    public void setOcean(Ocean1 ocean) {
-        this.ocean = ocean;
+    public KoscheiTheDeathless(Ocean1 ocean1) {
+        this.ocean = ocean1;
     }
 }
